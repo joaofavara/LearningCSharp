@@ -4,7 +4,11 @@ using System;
 namespace CursoCSharp {
     class Program {
         static void Main(string[] args) {
-            Console.WriteLine("Hello, World!");
+
+            Console.WriteLine("Insert an name: ");
+            string name = Console.ReadLine();
+            CentralDeExercicios centralDeExercicios = new CentralDeExercicios(name);
+            centralDeExercicios.RunProgram();
         }
     }
 }
