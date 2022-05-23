@@ -7,8 +7,10 @@ namespace CursoCSharp {
 
             Console.WriteLine("Insert an name: ");
             string? name = Console.ReadLine();
-            CentralDeExercicios centralDeExercicios = new CentralDeExercicios(name);
-            centralDeExercicios.RunProgram();
+            CentralDeExercicios centralDeExercicios = new CentralDeExercicios();
+            centralDeExercicios.RunProgram(new Dictionary<string, string>() {
+                {"xuin", "batata"}
+            });
         }
     }
 }
