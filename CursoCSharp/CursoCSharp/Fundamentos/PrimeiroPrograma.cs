@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CursoCSharp.Fundamentos {
     class PrimeiroPrograma {
-        static void Executar() {
+        public static void Exec() {
             Console.WriteLine("Hello, World!");
         }
     }

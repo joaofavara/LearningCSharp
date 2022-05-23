@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace CursoCSharp {
     public class CentralDeExercicios {
-        // private string test;
-
-        /*public CentralDeExercicios(string? name) {
-            test = String.IsNullOrEmpty(name) ?  "World" : name;            
-        }*/
-
-        public void RunProgram(Dictionary<string, string>? program) {
-
-            foreach (KeyValuePair<string, string> pair in program) {
-                Console.WriteLine("Key: {0} Values: {1}", pair.Key, pair.Value);
+        public void RunProgram(Dictionary<string, Action>? program) {
+            foreach (KeyValuePair<string, Action> pair in program) {
+                Console.WriteLine("{0}", pair.Key);
             }
+
+            int choosenProgram = Convert.ToInt32(Console.ReadLine()) - 1;
+            program.Values.ElementAt(choosenProgram)();
         }
     }
 }
