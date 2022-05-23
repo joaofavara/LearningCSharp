@@ -6,7 +6,7 @@ namespace CursoCSharp {
         static void Main(string[] args) {
 
             Console.WriteLine("Insert an name: ");
-            string name = Console.ReadLine();
+            string? name = Console.ReadLine();
             CentralDeExercicios centralDeExercicios = new CentralDeExercicios(name);
             centralDeExercicios.RunProgram();
         }
